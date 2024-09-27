@@ -33,28 +33,46 @@
     
     body {
       background-color: #071c39;
-      position: relative; /* Alterado para evitar sobreposição total */
-      height: 100vh; /* Para garantir que o conteúdo seja visível */
+      position: relative;
+      height: 100vh; 
       display: flex;
       justify-content: center;
       align-items: start;
-      flex-direction: column; /* Organiza conteúdo em coluna */
+      flex-direction: column;
       overflow: scroll;
       font-family: 'Roboto', sans-serif;
   }
     
   header {
       position: relative;
-      top: 0; /* Define o topo como 0 */
-      width: 100%; /* Ocupa toda a largura da página */
+      top: 0; 
+      width: 100%; 
       background-color: transparent;
       color: white;
       padding: 20px;
       text-align: left;
       font-size: larger;
-      z-index: 1000; /* Garante que o header fique acima do conteúdo */
+      z-index: 1000;
   }
   
+  .perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
   section {
     position: relative;
     background-color: rgba(29, 81, 185, .2);
